@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { FaShoppingCart, FaBars } from 'react-icons/fa';
+import { FaShoppingCart, FaBars, FaSearch, FaInfoCircle } from 'react-icons/fa';
 import { FaXmark } from 'react-icons/fa6';
 import {MdHome} from 'react-icons/md';
 import {AiFillShopping} from 'react-icons/ai';
@@ -41,9 +41,13 @@ export const Header = () => {
           <div className="hidden md:flex justify-center items-center gap-6 font-medium">
             <NavLink to='/' className={({isActive}) => isActive ? 'text-primary' : ''}>Home</NavLink>
             <NavLink to='/shop' className={({isActive}) => isActive ? 'text-primary' : ''}>Shop Now</NavLink>
+            <NavLink to='/about' className={({isActive}) => isActive ? 'text-primary' : ''}>About Us</NavLink>
           </div>
 
           <div className="flex justify-center items-center gap-4">
+            <div>
+              <FaSearch className="text-xl text-primary cursor-pointer select-none" />
+            </div>
             <div>
               <FaShoppingCart className="text-2xl text-primary cursor-pointer select-none" />
             </div>
@@ -72,6 +76,13 @@ export const Header = () => {
             <div className="flex items-center gap-3">
               <AiFillShopping className="text-xl" />
               Shop Now
+            </div>
+            <FaArrowRightLong />
+          </NavLink>
+          <NavLink to='/about' className="flex justify-between items-center gap-3 px-6 py-3" style={({isActive}) => isActive ? {color: '#D71E44'} : {}} onClick={() => setDrawerShow(false)}>
+            <div className="flex items-center gap-3">
+              <FaInfoCircle className="text-xl" />
+              About Us
             </div>
             <FaArrowRightLong />
           </NavLink>

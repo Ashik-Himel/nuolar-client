@@ -7,8 +7,8 @@ export const Footer = () => {
   return (
     <footer className='bg-primary bg-opacity-10'>
       <div className="container">
-        <div className='py-10 grid grid-cols-[auto] sm:grid-cols-[auto_auto] md:grid-cols-[auto_auto_auto] gap-8 justify-between items-center'>
-          <div className='sm:col-span-2 md:col-span-1'>
+        <div className='py-10 grid grid-cols-[auto] sm:grid-cols-[auto_auto] lg:grid-cols-[auto_auto_auto] gap-8 justify-between items-center'>
+          <div className='sm:col-span-2 lg:col-span-1'>
             <img src={brandLogo} alt="Brand Logo" className='w-[120px] block mb-4' />
             <span className='block mb-2 max-w-[350px]'><span className='font-semibold'>Address:</span> East of Kewa, Kewa Bazar, Sreepur, Gazipur-1740, Dhaka, Bangladesh.</span>
             <span className='block mb-6'><span className='font-semibold'>Mobile:</span> <a href="tel:+8801315779906" className='text-primary'>+8801315-779906</a></span>
