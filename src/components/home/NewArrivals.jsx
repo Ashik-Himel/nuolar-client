@@ -15,8 +15,8 @@ export const NewArrivals = () => {
     <section className='mt-10'>
       <div className="container">
         <div className='flex justify-between items-center gap-4 mb-4'>
-          <h2 className='flex items-center gap-3 text-2xl font-semibold uppercase'>New Arrivals <FaArrowRightLong /></h2>
-          <Link className='text-primary font-semibold'>See All</Link>
+          <h2 className='flex items-center gap-3 text-2xl font-semibold uppercase'>New Arrivals</h2>
+          <Link className='text-primary font-semibold flex justify-center items-center gap-2'>See All <FaArrowRightLong /></Link>
         </div>
 
         <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4'>
@@ -25,6 +25,15 @@ export const NewArrivals = () => {
           <ProductCard product={product} />
           <ProductCard product={product} />
           <ProductCard product={product} />
+
+          <Link className='bg-primary bg-opacity-10 border border-primary rounded-md p-4 flex justify-center items-center xl:hidden'>
+            <div className='text-primary font-medium flex flex-col justify-center items-center gap-2'>
+              <span>See All</span>
+              <div className='p-3 bg-primary bg-opacity-10 rounded-full'>
+                <FaArrowRightLong />
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
     </section>

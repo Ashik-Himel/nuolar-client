@@ -14,10 +14,10 @@ export const Footer = () => {
             <span className='block mb-6'><span className='font-semibold'>Mobile:</span> <a href="tel:+8801315779906" className='text-primary'>+8801315-779906</a></span>
             <div className='flex items-center gap-6'>
               <a href="https://www.facebook.com/nuolar" target="_blank" rel="noopener noreferrer">
-                <img src={facebookIcon} alt="Facebook Icon" className='w-[35px]' />
+                <img src={facebookIcon} alt="Facebook Icon" className='w-[30px]' />
               </a>
               <a href="https://www.instagram.com/nuo.lar" target="_blank" rel="noopener noreferrer">
-                <img src={instagramIcon} alt="Instagram Icon" className='w-[35px]' />
+                <img src={instagramIcon} alt="Instagram Icon" className='w-[30px]' />
               </a>
               <a href="https://wa.me/message/OFKY4OFQJXPPG1" target="_blank" rel="noopener noreferrer">
                 <img src={whatsappIcon} alt="WhatsApp Icon" className='w-[35px]' />
