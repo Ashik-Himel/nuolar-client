@@ -10,17 +10,7 @@ export const Categories = () => {
           <div className='border-2 border-primary rounded-lg w-[150px] h-[150px] relative'>
             <div className='absolute inset-0 bg-secondary rounded-md flex justify-center items-center'>
               <div className='absolute inset-0 bg-black bg-opacity-60 rounded-md'></div>
-              <img className='w-4/5' src="https://i.ibb.co/QNcnVQX/t-shirt.png" alt="T-Shirt Icon" />
-            </div>
-            <div className='absolute bottom-[10px] left-0 right-0 text-white flex flex-col justify-center items-center'>
-              <span className='text-xl font-semibold'>T-Shirt</span>
-              <span className='text-sm'>0 Item</span>
-            </div>
-          </div>
-          <div className='border-2 border-primary rounded-lg w-[150px] h-[150px] relative'>
-            <div className='absolute inset-0 bg-secondary rounded-md flex justify-center items-center'>
-              <div className='absolute inset-0 bg-black bg-opacity-60 rounded-md'></div>
-              <img className='w-4/5' src="https://i.ibb.co/yFTKncB/polo-shirt.png" alt="Polo Shirt Icon" />
+              <img className='w-4/5' src="https://i.ibb.co/fFQbY6f/polo-shirt.png" alt="Polo Shirt Icon" />
             </div>
             <div className='absolute bottom-[10px] left-0 right-0 text-white flex flex-col justify-center items-center'>
               <span className='text-xl font-semibold'>Polo Shirt</span>
@@ -30,7 +20,17 @@ export const Categories = () => {
           <div className='border-2 border-primary rounded-lg w-[150px] h-[150px] relative'>
             <div className='absolute inset-0 bg-secondary rounded-md flex justify-center items-center'>
               <div className='absolute inset-0 bg-black bg-opacity-60 rounded-md'></div>
-              <img className='w-4/5' src="https://i.ibb.co/K6KHDG2/hudy.png" alt="Hudy Icon" />
+              <img className='w-4/5' src="https://i.ibb.co/5jLt3nM/t-shirt.png" alt="T-Shirt Icon" />
+            </div>
+            <div className='absolute bottom-[10px] left-0 right-0 text-white flex flex-col justify-center items-center'>
+              <span className='text-xl font-semibold'>T-Shirt</span>
+              <span className='text-sm'>0 Item</span>
+            </div>
+          </div>
+          <div className='border-2 border-primary rounded-lg w-[150px] h-[150px] relative'>
+            <div className='absolute inset-0 bg-secondary rounded-md flex justify-center items-center'>
+              <div className='absolute inset-0 bg-black bg-opacity-60 rounded-md'></div>
+              <img className='w-4/5' src="https://i.ibb.co/6bmTMzH/hudy.png" alt="Hudy Icon" />
             </div>
             <div className='absolute bottom-[10px] left-0 right-0 text-white flex flex-col justify-center items-center'>
               <span className='text-xl font-semibold'>Hudy</span>
@@ -40,7 +40,7 @@ export const Categories = () => {
           <div className='border-2 border-primary rounded-lg w-[150px] h-[150px] relative'>
             <div className='absolute inset-0 bg-secondary rounded-md flex justify-center items-center'>
               <div className='absolute inset-0 bg-black bg-opacity-60 rounded-md'></div>
-              <img className='w-4/5' src="https://i.ibb.co/3pYW0S1/shirt.png" alt="Shirt Icon" />
+              <img className='w-4/5' src="https://i.ibb.co/4PVkFGV/shirt.png" alt="Shirt Icon" />
             </div>
             <div className='absolute bottom-[10px] left-0 right-0 text-white flex flex-col justify-center items-center'>
               <span className='text-xl font-semibold'>Shirt</span>
@@ -50,10 +50,20 @@ export const Categories = () => {
           <div className='border-2 border-primary rounded-lg w-[150px] h-[150px] relative'>
             <div className='absolute inset-0 bg-secondary rounded-md flex justify-center items-center'>
               <div className='absolute inset-0 bg-black bg-opacity-60 rounded-md'></div>
-              <img className='w-4/5' src="https://i.ibb.co/8MHmkpF/panjabi.png" alt="Panjabi Icon" />
+              <img className='w-4/5' src="https://i.ibb.co/30TMqqj/panjabi.png" alt="Panjabi Icon" />
             </div>
             <div className='absolute bottom-[10px] left-0 right-0 text-white flex flex-col justify-center items-center'>
               <span className='text-xl font-semibold'>Panjabi</span>
+              <span className='text-sm'>0 Item</span>
+            </div>
+          </div>
+          <div className='border-2 border-primary rounded-lg w-[150px] h-[150px] relative'>
+            <div className='absolute inset-0 bg-secondary rounded-md flex justify-center items-center'>
+              <div className='absolute inset-0 bg-black bg-opacity-60 rounded-md'></div>
+              <img className='w-4/5' src="https://i.ibb.co/D8YBySq/pant.png" alt="Pant Icon" />
+            </div>
+            <div className='absolute bottom-[10px] left-0 right-0 text-white flex flex-col justify-center items-center'>
+              <span className='text-xl font-semibold'>Pants</span>
               <span className='text-sm'>0 Item</span>
             </div>
           </div>
