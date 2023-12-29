@@ -17,6 +17,7 @@ export const Layout = () => {
 
     // Your SDK code
     window.fbAsyncInit = function() {
+      // eslint-disable-next-line no-undef
       FB.init({
         xfbml            : true,
         version          : 'v18.0'
@@ -33,7 +34,7 @@ export const Layout = () => {
   }, []);
 
   return (
-    <div className="flex flex-col [&>*:nth-child(2)]:flex-1 h-auto min-h-screen">
+    <div className="flex flex-col [&>*:nth-child(2)]:flex-1 h-auto min-h-screen [&>*:nth-child(2)]:mt-[70.4px] [&>*:nth-child(2)]:md:mt-[70.8px]">
       <Header />
       <Outlet />
       <Footer />

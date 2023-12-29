@@ -5,7 +5,7 @@ import whatsappIcon from '../../assets/images/whatsapp.png';
 
 export const Footer = () => {
   return (
-    <footer className='bg-primary bg-opacity-10'>
+    <footer className='bg-primary bg-opacity-10 mt-10'>
       <div className="container">
         <div className='py-10 grid grid-cols-[auto] sm:grid-cols-[auto_auto] lg:grid-cols-[auto_auto_auto] gap-8 justify-between items-center'>
           <div className='sm:col-span-2 lg:col-span-1'>

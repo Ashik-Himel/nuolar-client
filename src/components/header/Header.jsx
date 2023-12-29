@@ -11,11 +11,14 @@ import brandLogo from '../../assets/images/nuolar.png';
 export const Header = () => {
   const [drawerShow, setDrawerShow] = useState(false);
   const drawerRef = useRef(null);
+  const barRef = useRef(null);
 
   useEffect(() => {
     const handleDrawerClick = e => {
-      if (drawerRef.current && !drawerRef.current?.contains(e.target) && !(e.target.id == 'bar' || e.target.id == 'bar-container')) {
-        setDrawerShow(false);
+      if (barRef.current && !barRef.current?.contains(e.target)) {
+        if (drawerRef.current && !drawerRef.current?.contains(e.target)) {
+          setDrawerShow(false);
+        }
       }
     }
     document.addEventListener('click', handleDrawerClick);
@@ -26,12 +29,12 @@ export const Header = () => {
   }, []); 
 
   return (
-    <header className="py-4 border-b border-gray-300">
+    <header className="py-4 border-b border-gray-300 fixed top-0 left-0 right-0 bg-white z-40">
       <div className="container">
         <nav className="flex justify-between items-center gap-4">
           <div className="flex justify-center items-center gap-3">
-            <div className="bar md:hidden border border-gray-300 p-2 rounded text-xl cursor-pointer select-none" onClick={() => setDrawerShow(true)} id="bar-container">
-              <FaBars id="bar" />
+            <div className="bar md:hidden border border-gray-300 p-2 rounded text-xl cursor-pointer select-none" onClick={() => setDrawerShow(true)} ref={barRef}>
+              <FaBars />
             </div>
             <Link to='/'>
               <img src={brandLogo} alt="Brand Logo" className="w-[100px]" />

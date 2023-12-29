@@ -2,12 +2,12 @@ import {FaArrowRightLong} from 'react-icons/fa6';
 
 export const Categories = () => {
   return (
-    <section className='mt-10 mb-10'>
+    <section className='mt-10'>
       <div className="container">
         <h2 className='flex items-center gap-3 text-2xl font-semibold uppercase mb-4'>Categories <FaArrowRightLong /></h2>
 
-        <div className='flex flex-wrap justify-start lg:justify-between items-center gap-2'>
-          <div className='border-2 border-primary rounded-lg w-[150px] h-[150px] relative'>
+        <div className='grid grid-cols-2 xsm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 lg:gap-4'>
+          <div className='border-2 border-primary rounded-lg aspect-square relative'>
             <div className='absolute inset-0 bg-secondary rounded-md flex justify-center items-center'>
               <div className='absolute inset-0 bg-black bg-opacity-60 rounded-md'></div>
               <img className='w-4/5' src="https://i.ibb.co/fFQbY6f/polo-shirt.png" alt="Polo Shirt Icon" />
@@ -17,7 +17,7 @@ export const Categories = () => {
               <span className='text-sm'>0 Item</span>
             </div>
           </div>
-          <div className='border-2 border-primary rounded-lg w-[150px] h-[150px] relative'>
+          <div className='border-2 border-primary rounded-lg aspect-square relative'>
             <div className='absolute inset-0 bg-secondary rounded-md flex justify-center items-center'>
               <div className='absolute inset-0 bg-black bg-opacity-60 rounded-md'></div>
               <img className='w-4/5' src="https://i.ibb.co/5jLt3nM/t-shirt.png" alt="T-Shirt Icon" />
@@ -27,7 +27,7 @@ export const Categories = () => {
               <span className='text-sm'>0 Item</span>
             </div>
           </div>
-          <div className='border-2 border-primary rounded-lg w-[150px] h-[150px] relative'>
+          <div className='border-2 border-primary rounded-lg aspect-square relative'>
             <div className='absolute inset-0 bg-secondary rounded-md flex justify-center items-center'>
               <div className='absolute inset-0 bg-black bg-opacity-60 rounded-md'></div>
               <img className='w-4/5' src="https://i.ibb.co/6bmTMzH/hudy.png" alt="Hudy Icon" />
@@ -37,7 +37,7 @@ export const Categories = () => {
               <span className='text-sm'>0 Item</span>
             </div>
           </div>
-          <div className='border-2 border-primary rounded-lg w-[150px] h-[150px] relative'>
+          <div className='border-2 border-primary rounded-lg aspect-square relative'>
             <div className='absolute inset-0 bg-secondary rounded-md flex justify-center items-center'>
               <div className='absolute inset-0 bg-black bg-opacity-60 rounded-md'></div>
               <img className='w-4/5' src="https://i.ibb.co/4PVkFGV/shirt.png" alt="Shirt Icon" />
@@ -47,7 +47,7 @@ export const Categories = () => {
               <span className='text-sm'>0 Item</span>
             </div>
           </div>
-          <div className='border-2 border-primary rounded-lg w-[150px] h-[150px] relative'>
+          <div className='border-2 border-primary rounded-lg aspect-square relative'>
             <div className='absolute inset-0 bg-secondary rounded-md flex justify-center items-center'>
               <div className='absolute inset-0 bg-black bg-opacity-60 rounded-md'></div>
               <img className='w-4/5' src="https://i.ibb.co/30TMqqj/panjabi.png" alt="Panjabi Icon" />
@@ -57,7 +57,7 @@ export const Categories = () => {
               <span className='text-sm'>0 Item</span>
             </div>
           </div>
-          <div className='border-2 border-primary rounded-lg w-[150px] h-[150px] relative'>
+          <div className='border-2 border-primary rounded-lg aspect-square relative'>
             <div className='absolute inset-0 bg-secondary rounded-md flex justify-center items-center'>
               <div className='absolute inset-0 bg-black bg-opacity-60 rounded-md'></div>
               <img className='w-4/5' src="https://i.ibb.co/D8YBySq/pant.png" alt="Pant Icon" />

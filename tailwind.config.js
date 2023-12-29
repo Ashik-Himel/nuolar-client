@@ -12,7 +12,11 @@ export default {
         '2xl': '6rem'
       }
     },
-    extend: {},
+    extend: {
+      screens: {
+        xsm: '500px'
+      }
+    },
   },
   plugins: [require('daisyui')],
   'daisyui': {
