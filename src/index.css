@@ -10,3 +10,7 @@
     @apply text-white;
   }
 }
+
+#fb-root {
+  @apply z-30;
+}

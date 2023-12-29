@@ -19,7 +19,7 @@ export const ProductCard = ({product}) => {
         <img src={thumbnail} alt="Product Image" className='w-4/5 mx-auto' />
       </div>
       <h3 className='text-xl font-medium mb-1'>{name}</h3>
-      <div className='flex gap-1 text-yellow-600 mb-2'>
+      <div className='flex gap-1 text-yellow-500 mb-2'>
         {
           ratingArray?.map(item => item === 1 ? <FaStar key={item} /> : <FaRegStar key={item} />)
         }

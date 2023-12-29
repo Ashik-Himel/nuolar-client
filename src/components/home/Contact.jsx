@@ -14,7 +14,7 @@ export const Contact = () => {
 
         <div className='flex flex-col md:flex-row justify-center items-center gap-6 [&>*]:flex-1'>
           <div className='w-full'>
-            <div className='bg-primary bg-opacity-10 px-4 py-6 border border-primary rounded-lg w-full max-w-[400px] mx-auto'>
+            <div className='bg-primary bg-opacity-10 p-4 border border-primary rounded-lg w-full max-w-[400px] mx-auto'>
               <BiSolidContact className='text-6xl text-primary mb-4' />
               <span className='block mb-1'><span className='font-medium'>Facebook Page:</span> <a className='text-primary underline underline-offset-[3px]' href="https://www.facebook.com/nuolar" target="_blank" rel="noopener noreferrer">Nuolar</a></span>
               <span className='block mb-1'><span className='font-medium'>Facebook Group:</span> <a className='text-primary underline underline-offset-[3px]' href="https://www.facebook.com/groups/nuolar" target="_blank" rel="noopener noreferrer">Nuolar Family</a></span>
@@ -34,7 +34,7 @@ export const Contact = () => {
             <input className='block input border border-gray-300 w-full max-w-[500px] mb-4' type="text" name="subject" id="subject" placeholder='Write your subject' required />
 
             <label htmlFor="message" className='block font-medium mb-2'>Message</label>
-            <textarea className='block textarea resize-none border border-gray-300 w-full max-w-[500px] h-[100px] mb-4' name="message" id="message" placeholder='Write your message' required></textarea>
+            <textarea className='block textarea resize-none border border-gray-300 w-full max-w-[500px] h-[100px] text-base mb-4' name="message" id="message" placeholder='Write your message' required></textarea>
 
             <button className='btn btn-primary' type="submit">Send <FaArrowRightLong /></button>
           </form>

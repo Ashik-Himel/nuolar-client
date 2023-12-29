@@ -63,8 +63,8 @@ export const Header = () => {
 
       {/* Header Drawer */}
       <div className="md:hidden fixed top-0 bottom-0 w-3/4 max-w-[300px] bg-white z-50 [box-shadow:5px_0px_50px_rgba(0,0,0,0.3)] transition-[left] duration-300" style={drawerShow ? {left: '0'} : {left: '-350px'}} ref={drawerRef}>
-        <div className="flex justify-between items-center gap-4 px-6 py-6">
-          <h4 className="text-secondary text-xl uppercase font-semibold">Pages</h4>
+        <div className="flex justify-between items-center gap-4 px-6 pt-6 pb-4">
+          <h4 className="text-secondary text-xl uppercase font-semibold ml-[2px]">Pages</h4>
           <FaXmark className="text-2xl cursor-pointer select-none" onClick={() => setDrawerShow(false)} />
         </div>
         <div className="flex flex-col font-medium">
@@ -73,28 +73,28 @@ export const Header = () => {
               <MdHome className="text-xl" />
               Home
             </div>
-            <FaArrowRightLong />
+            <FaArrowRightLong className="mr-2" />
           </NavLink>
           <NavLink to='/shop' className="flex justify-between items-center gap-3 px-6 py-3" style={({isActive}) => isActive ? {color: '#D71E44'} : {}} onClick={() => setDrawerShow(false)}>
             <div className="flex items-center gap-3">
               <AiFillShopping className="text-xl" />
               Shop Now
             </div>
-            <FaArrowRightLong />
+            <FaArrowRightLong className="mr-2" />
           </NavLink>
           <NavLink to='/about' className="flex justify-between items-center gap-3 px-6 py-3" style={({isActive}) => isActive ? {color: '#D71E44'} : {}} onClick={() => setDrawerShow(false)}>
             <div className="flex items-center gap-3">
               <FaInfoCircle className="text-xl" />
               About Us
             </div>
-            <FaArrowRightLong />
+            <FaArrowRightLong className="mr-2" />
           </NavLink>
           <NavLink to='/login' className="flex justify-between items-center gap-3 px-6 py-3" style={({isActive}) => isActive ? {color: '#D71E44'} : {}} onClick={() => setDrawerShow(false)}>
             <div className="flex items-center gap-3">
               <RiLoginBoxLine className="text-xl" />
               Login
             </div>
-            <FaArrowRightLong />
+            <FaArrowRightLong className="mr-2" />
           </NavLink>
         </div>
       </div>
