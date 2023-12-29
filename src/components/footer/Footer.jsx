@@ -26,7 +26,7 @@ export const Footer = () => {
           </div>
           <div>
             <h4 className='text-2xl font-semibold text-primary mb-3'>Social</h4>
-            <div className='flex flex-col gap-2 font-medium'>
+            <div className='flex flex-col items-start gap-2 font-medium'>
               <a href="https://www.facebook.com/nuolar" target="_blank" rel="noopener noreferrer">Facebook Page</a>
               <a href="https://www.facebook.com/groups/nuolar" target="_blank" rel="noopener noreferrer">Facebook Group</a>
               <a href="https://www.instagram.com/nuo.lar" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -34,7 +34,7 @@ export const Footer = () => {
           </div>
           <div>
             <h4 className='text-2xl font-semibold text-primary mb-3'>Contact</h4>
-            <div className='flex flex-col gap-2 font-medium'>
+            <div className='flex flex-col items-start gap-2 font-medium'>
               <a href="https://wa.me/message/OFKY4OFQJXPPG1" target="_blank" rel="noopener noreferrer">WhatsApp</a>
               <a href="https://m.me/nuolar" target="_blank" rel="noopener noreferrer">Messenger</a>
               <a href="mailto:nuolar.brand@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
