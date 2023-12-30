@@ -8,7 +8,7 @@ export const Contact = () => {
   }
 
   return (
-    <section className="mt-10">
+    <section className="mt-12 lg:mt-16">
       <div className="container">
         <h2 className="text-center text-2xl font-semibold uppercase mb-4"><span className="text-primary">Contact</span> Us</h2>
 

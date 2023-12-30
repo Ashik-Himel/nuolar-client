@@ -2,7 +2,7 @@ import {FaArrowRightLong} from 'react-icons/fa6';
 
 export const Categories = () => {
   return (
-    <section className='mt-10'>
+    <section className='mt-12 lg:mt-16'>
       <div className="container">
         <h2 className='flex items-center gap-3 text-2xl font-semibold uppercase mb-4'>Categories <FaArrowRightLong /></h2>
 

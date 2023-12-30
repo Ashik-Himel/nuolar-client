@@ -12,7 +12,7 @@ const product = {
 
 export const NewArrivals = () => {
   return (
-    <section className='mt-10'>
+    <section className='mt-12 lg:mt-16'>
       <div className="container">
         <div className='flex justify-between items-center gap-4 mb-4'>
           <h2 className='flex items-center gap-3 text-2xl font-semibold uppercase'>New Arrivals</h2>

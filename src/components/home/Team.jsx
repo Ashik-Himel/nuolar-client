@@ -7,7 +7,7 @@ import telephoneIcon from '../../assets/images/telephone.png';
 
 export const Team = () => {
   return (
-    <section className="mt-10">
+    <section className="mt-12 lg:mt-16">
       <div className="container">
         <h2 className="text-center text-2xl font-semibold uppercase mb-4">Our <span className="text-primary">Team</span></h2>
 

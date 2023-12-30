@@ -14,3 +14,6 @@
 #fb-root {
   @apply z-30;
 }
+.itemBtnExpanded .chevron {
+  @apply rotate-180;
+}

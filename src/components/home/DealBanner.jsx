@@ -3,7 +3,7 @@ import {FaArrowRightLong} from 'react-icons/fa6';
 
 export const DealBanner = () => {
   return (
-    <section className="mt-10 bg-primary bg-opacity-10 py-8">
+    <section className="mt-12 lg:mt-16 bg-primary bg-opacity-10 py-8">
       <div className="container">
         <div className="flex flex-col-reverse sm:flex-row justify-center items-center gap-x-6 gap-y-4 [&>*]:flex-1">
           <div>
