@@ -23,7 +23,7 @@ export const Contact = () => {
               <span className='block mb-1'><span className='font-medium'>Email:</span> <a className='text-primary underline underline-offset-[3px]' href="mailto:nuolar.brand@gmail.com" target="_blank" rel="noopener noreferrer">nuolar.brand@gmail.com</a></span>
             </div>
           </div>
-          <form className='w-full' onSubmit={handleSubmit}>
+          <form className='w-full max-w-[500px]' onSubmit={handleSubmit}>
             <label htmlFor="name" className='block font-medium mb-2'>Name</label>
             <input className='block input border border-gray-300 w-full max-w-[500px] mb-4' type="text" name="name" id="name" placeholder='Write your name' required />
 

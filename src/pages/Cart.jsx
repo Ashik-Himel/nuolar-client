@@ -1,13 +1,13 @@
 import { Helmet } from "react-helmet-async";
 
-export const About = () => {
+export const Cart = () => {
   return (
     <main>
       <Helmet>
-        <title>About Us - Nuolar</title>
+        <title>My Cart - Nuolar</title>
       </Helmet>
       
-      <p>About component.</p>
+      <p>Cart component.</p>
     </main>
   );
 };

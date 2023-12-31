@@ -6,32 +6,80 @@ import {MdHome} from 'react-icons/md';
 import {AiFillShopping} from 'react-icons/ai';
 import {RiLoginBoxLine} from 'react-icons/ri';
 import {FaArrowRightLong} from 'react-icons/fa6';
+import {GoSearch} from 'react-icons/go';
 import brandLogo from '../../assets/images/nuolar.png';
+import PropTypes from 'prop-types';
+
+// Remove this after dynamic data load from database
+const product = {
+  'thumbnail': 'https://i.ibb.co/Y3kVjnb/polo-shirt-1.png',
+  'name': 'Polo Shirt 1',
+  'price': 600,
+  'rating': 5.00
+}
+
+const CartItemComponent = ({product}) => {
+  const {thumbnail, name, price} = product;
+  // Remove this after dynamic data load from database
+  const quantity = 2;
+
+  return (
+    <div className="flex justify-between items-center gap-4 border-b border-gray-300 py-2">
+      <img src={thumbnail} alt="Product's Image" className="w-full max-w-[60px] rounded-lg" />
+      <div className="flex-1">
+        <h4 className="text-[18px] font-medium mb-1">{name}</h4>
+        <div className="text-gray-500 space-x-6">
+          <span>X {quantity}</span>
+          <span>&#2547; {price * quantity}</span>
+        </div>
+      </div>
+      <div className="p-2 text-xl cursor-pointer select-none">
+        <FaXmark />
+      </div>
+    </div>
+  );
+}
 
 export const Header = () => {
   const [drawerShow, setDrawerShow] = useState(false);
+  const [searchShow, setSearchShow] = useState(false);
+  const [cartShow, setCartShow] = useState(false);
   const drawerRef = useRef(null);
   const barRef = useRef(null);
+  const searchRef = useRef(null);
+  const searchIconRef = useRef(null);
+  const cartRef = useRef(null);
+  const cartIconRef = useRef(null);
 
   useEffect(() => {
-    const handleDrawerClick = e => {
+    const handleDocumentClick = e => {
       if (barRef.current && !barRef.current?.contains(e.target)) {
         if (drawerRef.current && !drawerRef.current?.contains(e.target)) {
           setDrawerShow(false);
         }
       }
+      if (searchIconRef.current && !searchIconRef.current?.contains(e.target)) {
+        if (searchRef.current && !searchRef.current?.contains(e.target)) {
+          setSearchShow(false);
+        }
+      }
+      if (cartIconRef.current && !cartIconRef.current?.contains(e.target)) {
+        if (cartRef.current && !cartRef.current?.contains(e.target)) {
+          setCartShow(false);
+        }
+      }
     }
-    document.addEventListener('click', handleDrawerClick);
+    document.addEventListener('click', handleDocumentClick);
 
     return () => {
-      document.removeEventListener('click', handleDrawerClick);
+      document.removeEventListener('click', handleDocumentClick);
     };
   }, []); 
 
   return (
     <header className="py-4 border-b border-gray-300 fixed top-0 left-0 right-0 bg-white z-40">
       <div className="container">
-        <nav className="flex justify-between items-center gap-4">
+        <nav className="flex justify-between items-center gap-4 relative">
           <div className="flex justify-center items-center gap-3">
             <div className="bar md:hidden border border-gray-300 p-2 rounded text-xl cursor-pointer select-none" onClick={() => setDrawerShow(true)} ref={barRef}>
               <FaBars />
@@ -49,10 +97,30 @@ export const Header = () => {
 
           <div className="flex justify-center items-center gap-4">
             <div>
-              <FaSearch className="text-xl text-primary cursor-pointer select-none" />
+              <div className="text-xl text-primary cursor-pointer select-none" onClick={() => setSearchShow(!searchShow)} ref={searchIconRef}>
+                <FaSearch />
+              </div>
+
+              <form className={`absolute right-0 top-[calc(100%+20px)] w-full max-w-[350px] transition-transform origin-top duration-300 ${searchShow ? 'scale-y-100' : 'scale-y-0'}`} ref={searchRef}>
+                <input className="input w-full border border-gray-300 pl-[36px]" type="search" name="search" id="search" placeholder="Search Product" required />
+                <label htmlFor="search" className="absolute top-1/2 left-3 -translate-y-1/2 cursor-pointer select-none">
+                  <GoSearch className="text-[18px]" />
+                </label>
+              </form>
             </div>
             <div>
-              <FaShoppingCart className="text-2xl text-primary cursor-pointer select-none" />
+              <div className="text-2xl text-primary cursor-pointer select-none" onClick={() => setCartShow(!cartShow)} ref={cartIconRef}>
+                <FaShoppingCart />
+              </div>
+
+              <div className={`bg-white p-4 pb-3 border border-gray-300 absolute top-[calc(100%+20px)] right-0 w-full max-w-[350px] rounded-lg transition-transform duration-300 origin-top ${cartShow ? 'scale-y-100' : 'scale-y-0'}`} ref={cartRef}>
+                <div className="[&>*:first-child]:pt-0 [&>*:last-child]:mb-4">
+                  <CartItemComponent product={product} />
+                  <CartItemComponent product={product} />
+                  <CartItemComponent product={product} />
+                </div>
+                <Link to='/cart' className="text-primary font-medium flex justify-center items-center gap-2" onClick={() => setCartShow(false)}>See All <FaArrowRightLong /></Link>
+              </div>
             </div>
             <div>
               <Link to='/login' className="btn btn-secondary hidden md:inline-flex">Login</Link>
@@ -101,3 +169,7 @@ export const Header = () => {
     </header>
   );
 };
+
+CartItemComponent.propTypes = {
+  product: PropTypes.object
+}

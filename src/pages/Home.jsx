@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Banner } from "../components/home/Banner";
 import { Categories } from "../components/home/Categories";
 import { Contact } from "../components/home/Contact";
@@ -9,6 +10,10 @@ import { Team } from "../components/home/Team";
 export const Home = () => {
   return (
     <main>
+      <Helmet>
+        <title>Nuolar - Uncompromising Quality Product</title>
+      </Helmet>
+      
       <Banner />
       <Categories />
       <DealBanner />
