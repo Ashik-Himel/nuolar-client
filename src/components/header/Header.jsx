@@ -102,7 +102,7 @@ export const Header = () => {
               </div>
 
               <form className={`absolute right-0 top-[calc(100%+20px)] w-full max-w-[350px] transition-transform origin-top duration-300 ${searchShow ? 'scale-y-100' : 'scale-y-0'}`} ref={searchRef}>
-                <input className="input w-full border border-gray-300 pl-[36px]" type="search" name="search" id="search" placeholder="Search Product" required />
+                <input className="input w-full bg-gray-50 border border-gray-300 shadow-lg pl-[36px]" type="search" name="search" id="search" placeholder="Search Product" required />
                 <label htmlFor="search" className="absolute top-1/2 left-3 -translate-y-1/2 cursor-pointer select-none">
                   <GoSearch className="text-[18px]" />
                 </label>
@@ -113,7 +113,7 @@ export const Header = () => {
                 <FaShoppingCart />
               </div>
 
-              <div className={`bg-white p-4 pb-3 border border-gray-300 absolute top-[calc(100%+20px)] right-0 w-full max-w-[350px] rounded-lg transition-transform duration-300 origin-top ${cartShow ? 'scale-y-100' : 'scale-y-0'}`} ref={cartRef}>
+              <div className={`bg-gray-50 shadow-lg p-4 pb-3 border border-gray-300 absolute top-[calc(100%+20px)] right-0 w-full max-w-[350px] rounded-lg transition-transform duration-300 origin-top ${cartShow ? 'scale-y-100' : 'scale-y-0'}`} ref={cartRef}>
                 <div className="[&>*:first-child]:pt-0 [&>*:last-child]:mb-4">
                   <CartItemComponent product={product} />
                   <CartItemComponent product={product} />

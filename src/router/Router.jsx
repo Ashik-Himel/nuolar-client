@@ -6,6 +6,8 @@ import { Shop } from "../pages/Shop";
 import { About } from "../pages/About";
 import { Login } from "../pages/Login";
 import { Cart } from "../pages/Cart";
+import { PrivateRouteAlt } from "../manageRoutes/PrivateRouteAlt";
+import { Register } from "../pages/Register";
 
 export const router = createBrowserRouter([
   {
@@ -31,7 +33,11 @@ export const router = createBrowserRouter([
       },
       {
         path: '/login',
-        element: <Login />
+        element: <PrivateRouteAlt><Login /></PrivateRouteAlt>
+      },
+      {
+        path: '/register',
+        element: <PrivateRouteAlt><Register /></PrivateRouteAlt>
       }
     ]
   }
